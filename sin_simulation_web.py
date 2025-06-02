@@ -10,7 +10,7 @@ import os
 st.set_page_config(page_title="Sin 함수 시뮬레이션", layout="wide")
 
 # matplotlib 한글 폰트 설정
-plt.style.use("seaborn")
+# seaborn 대신 기본 스타일 사용
 plt.rcParams["font.family"] = "DejaVu Sans"  # 기본 폰트 사용
 plt.rcParams["axes.unicode_minus"] = False  # 마이너스 기호 깨짐 방지
 plt.rcParams["font.size"] = 10
@@ -20,6 +20,8 @@ plt.rcParams["xtick.labelsize"] = 9
 plt.rcParams["ytick.labelsize"] = 9
 plt.rcParams["legend.fontsize"] = 9
 plt.rcParams["figure.dpi"] = 100
+plt.rcParams["axes.grid"] = True
+plt.rcParams["grid.alpha"] = 0.3
 
 # 제목
 st.title("Sin 함수 시뮬레이션")
