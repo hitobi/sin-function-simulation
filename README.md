@@ -27,4 +27,4 @@ streamlit run sin_simulation_web.py
 - Python
 - Streamlit
 - Matplotlib
-- NumPy 
+- NumPy
